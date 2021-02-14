@@ -23,14 +23,14 @@ const router = express.Router();
 
 router.post("/login", auth.login);
 router.post("/logout", auth.logout);
-router.get("/whoami", (req, res) => {
-  if (!req.user) {
-    // not logged in
-    return res.send({});
-  }
+// router.get("/whoami", (req, res) => {
+//   if (!req.user) {
+//     // not logged in
+//     return res.send({});
+//   }
 
-  res.send(req.user);
-});
+//   res.send(req.user);
+// });
 
 // router.post("/initsocket", (req, res) => {
 //   // do nothing if user not logged in
