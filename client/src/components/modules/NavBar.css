@@ -1,0 +1,22 @@
+.NavBar-container {
+    padding: var(--s) var(--s);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+  
+  }
+
+  .NavBar-link,
+  .NavBar-link:visited {
+    margin: 1vw;
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: large;
+    
+  }
+
+  .NavBar-link:hover {
+    color: var(--blue);
+  }

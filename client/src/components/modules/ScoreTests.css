@@ -1,0 +1,39 @@
+.ScoreTests-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw;
+}
+
+.border-green-600-top {
+    border-color: green;
+    border-width: 3px;
+   }
+   
+   .bg-green-100-top {
+       background-color: lightgreen;
+   }
+   
+   .ScoreTests-dropZone-top {
+       height: 20vh;
+       width: 100%;
+       display: flex;
+       padding-left: 5vh;
+       margin: 10px;
+       padding-right: 2vh;
+       justify-content: center;
+       align-items: center;
+       font-weight: 800;
+       font-size: 3vh;
+       align-content: center;
+       color: gray;
+   }
+   .border-green-600 {
+    border-color: green;
+    border-width: 3px;
+   }
+   
+   .bg-green-100 {
+       background-color: lightgreen;
+   }
