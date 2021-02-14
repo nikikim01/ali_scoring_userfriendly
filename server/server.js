@@ -27,7 +27,6 @@ const path = require("path"); // provide utilities for working with file and dir
 
 
 const api = require("./api");
-const auth = require("./auth");
 
 // socket stuff
 // const socketManager = require("./server-socket");
@@ -55,8 +54,8 @@ app.use(validator.checkRoutes);
 // allow us to process POST requests
 app.use(express.json());
 
-app.use(express.static(__dirname + '/dist/'));
-app.use('/src/assets', express.static(__dirname + '/src/assets/'));
+// app.use(express.static(__dirname + '/dist/'));
+// app.use('/src/assets', express.static(__dirname + '/src/assets/'));
 
 // set up a session, which will persist login data across requests
 app.use(
@@ -67,8 +66,6 @@ app.use(
   })
 );
 
-// this checks if the user is logged in, and populates "req.user"
-app.use(auth.populateCurrentUser);
 
 // connect user-defined routes
 app.use("/api", api);
