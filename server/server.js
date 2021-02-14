@@ -19,7 +19,9 @@ const validator = require("./validator");
 validator.checkSetup();
 
 //import libraries needed for the webserver to work!
-const http = require("http");
+var http = require('http');  
+http.createServer(function (req, res) {     res.writeHead(200, {'Content-Type': 'text/plain'});     
+res.send('it is running\n'); }).listen(process.env.PORT || 5000); 
 const express = require("express"); // backend framework for our node server.
 const session = require("express-session"); // library that stores info about each connected user
 const mongoose = require("mongoose"); // library to connect to MongoDB
