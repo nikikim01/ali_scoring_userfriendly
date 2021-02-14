@@ -7,8 +7,6 @@ import TestScoringPage from "./pages/TestScoringPage.js";
 
 import "../utilities.css";
 
-import { socket } from "../client-socket.js";
-
 import { get, post } from "../utilities";
 
 /**
