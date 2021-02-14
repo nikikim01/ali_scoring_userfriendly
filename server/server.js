@@ -33,9 +33,9 @@ const socketManager = require("./server-socket");
 
 // Server configuration below
 // TODO change connection URL after setting up your team database
-const mongoConnectionURL = "FILL ME IN";
+const mongoConnectionURL = process.env.MONGO_SRV;
 // TODO change database name to the name you chose
-const databaseName = "FILL ME IN";
+const databaseName = "ALI-Scoring";
 
 // connect to mongodb
 mongoose
