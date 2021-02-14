@@ -71,8 +71,9 @@ app.use(
 app.use("/api", api);
 
 // load the compiled react files, which will serve /index.html and /bundle.js
-const reactPath = path.resolve(__dirname, "..", "client", "dist");
-app.use(express.static(reactPath));
+// const reactPath = path.resolve(__dirname, "..", "client", "dist");
+// app.use(express.static(reactPath));
+app.use('/', express.static(path.join(__dirname, '/client/build')));
 
 // for all other routes, render index.html and let react router handle it
 app.get("*", (req, res) => {
