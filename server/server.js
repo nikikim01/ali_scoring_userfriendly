@@ -26,13 +26,6 @@ const mongoose = require("mongoose"); // library to connect to MongoDB
 const path = require("path"); // provide utilities for working with file and directory paths
 
 
-
-
-app.listen(process.env.PORT || 8080);
-
-
-
-
 const api = require("./api");
 const auth = require("./auth");
 
